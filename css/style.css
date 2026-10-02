@@ -58,6 +58,17 @@ a {
 .neutral-star {
     color: var(--main-bg-color);
 }
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
 
 /****** Header ***********/
 .page-header {
@@ -90,6 +101,66 @@ a {
 .nav-link:hover {
     border-top-color: var(--main-color);
     color: var(--main-color);
+}
+/****** Search ***********/
+.search {
+    display: flex;
+    flex-direction: column;
+    gap: 35px;
+}
+/****** Search-titles ***********/
+.search-titles {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+.main-title {
+    font-size: 22px;
+    margin: 0;
+}
+.main-subtitle {
+    font-size: 16px;
+    margin: 0;
+}
+
+/****** Search-form ***********/
+.search-form {
+    display: flex;
+    width: 377px;
+    height: 49px;
+    border-radius: 15px;
+    border: 1px solid var(--main-bg-color);
+    background-color: #ffffff;
+    gap: 24px;
+    align-items: center;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.location-icon {
+    background-color: var(--main-bg-color);
+    color: black;
+    font-size: 18px;
+    padding: 15px 18px;
+}
+.search-input {
+    color: black;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 0;
+    flex: 1;
+    min-width: 0;
+    border: none;
+}
+.search-input::placeholder {
+    color: black;
+}
+.search-button {
+    background-color: var(--main-color);
+    color: white;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 14px 16px;
+    border: none;
 }
 /****** Hebergements And Populaires ***********/
 .hebergements-and-populaires {
