@@ -28,7 +28,7 @@
                     src="./images/logo/Booki.png"
                     alt="Logo Booki"
                 />
-                <nav>
+                <nav class="nav-container">
                     <ul class="nav-list">
                         <li>
                             <a class="nav-link" href="#hebergements"
@@ -41,7 +41,7 @@
                     </ul>
                 </nav>
             </header>
-            <main>
+            <main class="main-container">
                 <section class="search">
                     <div class="search-titles">
                         <h1 class="section-title">
@@ -64,8 +64,16 @@
                             id="search"
                             placeholder="Marseille, France"
                         />
-                        <button class="search-button" type="submit">
-                            Rechercher
+                        <button
+                            class="search-button"
+                            type="submit"
+                            aria-label="Rechercher"
+                        >
+                            <span class="search-button-text">Rechercher</span>
+                            <i
+                                class="fa-solid fa-magnifying-glass search-button-icon"
+                                aria-hidden="true"
+                            ></i>
                         </button>
                     </form>
                     <div class="search-filters">
