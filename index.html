@@ -64,6 +64,10 @@
                             id="search"
                             placeholder="Marseille, France"
                         />
+                        <!-- Exception allowed by the specifications: both the "Rechercher" text and the magnifying-glass icon
+                        are present. CSS shows the text on desktop/tablet and the icon on mobile.
+                        The aria-label keeps an accessible name for the button when only the icon is visible. -->
+
                         <button
                             class="search-button"
                             type="submit"
