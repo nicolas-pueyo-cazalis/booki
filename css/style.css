@@ -214,6 +214,8 @@ a {
 
 .filter-link i {
     font-size: 20px;
+    width: 24px;
+    text-align: center;
 }
 
 .filter-link:hover {
@@ -423,6 +425,7 @@ a {
 
     .filter-list {
         white-space: nowrap;
+        flex-wrap: wrap;
     }
 
     .filter-link {
