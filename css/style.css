@@ -286,6 +286,8 @@ a {
     display: flex;
     flex-direction: column;
     padding: 9px 10px 10px;
+    flex-grow: 1;
+    justify-content: space-between;
 }
 
 .hebergements-cards .card-title {
@@ -379,6 +381,9 @@ a {
 .activites-cards .card-title {
     padding: 20px 19px;
     margin: 0;
+    flex: 1;
+    display: flex;
+    align-items: center;
 }
 
 /****** Footer***********/
@@ -478,9 +483,6 @@ a {
         height: 200px;
     }
     .activites-cards .card-title {
-        flex: 1;
-        display: flex;
-        align-items: center;
         padding: 16px 19px;
     }
 }
